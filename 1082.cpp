@@ -1,9 +1,3 @@
-/**
-Referencias:
-https://github.com/Gruutak/URI/blob/master/1082/1082.c
-https://github.com/ferreirasc/competitive-programming/blob/master/URI/GRAFOS/URI-1082.cpp
-*/
-
 #include <bits/stdc++.h>
 #define BRANCO 0
 #define CINZA 1
