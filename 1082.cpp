@@ -1,3 +1,9 @@
+/**
+Referencias:
+https://github.com/Gruutak/URI/blob/master/1082/1082.c
+https://github.com/ferreirasc/competitive-programming/blob/master/URI/GRAFOS/URI-1082.cpp
+*/
+
 #include <bits/stdc++.h>
 #define BRANCO 0
 #define CINZA 1
@@ -51,6 +57,7 @@ int main(void){
             if(!visitados[i]){
                 cont++;
                 dfs(i);
+                sort(ordem.begin(),ordem.end());
                 for(int j = 0;j < ordem.size();j++){ // enquando for menor que o tam do vetor
                         printf("%c,",ordem[j]+ 'a');
                 }
@@ -59,6 +66,7 @@ int main(void){
 			ordem.clear(); // limpa o vetor
 		}
 		cout << cont << " connected components" << endl;
+		cout << endl;
 	}
 	return 0;
 }
